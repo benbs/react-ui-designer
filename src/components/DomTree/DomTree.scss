@@ -1,0 +1,41 @@
+.root {
+  position: absolute;
+  left: 0;
+  height: 400px;
+  bottom: 0;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: #21252B;
+}
+
+.addNode {
+  width: 33%;
+  display: inline-block;
+}
+
+:global {
+  @import "react-ui-tree.css";
+  .m-node.placeholder {
+    border: 1px dashed #1385e5;
+  }
+  .m-node .inner {
+    color: #9DA5B4;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .m-node .node {
+    display: inline-block;
+    width: 100%;
+    padding: 4px 5px;
+  }
+  .m-node .node.is-active {
+    background-color: #31363F;
+  }
+
+}

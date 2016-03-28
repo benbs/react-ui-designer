@@ -1,0 +1,41 @@
+/**
+ * Created by Ben on 2/13/2016.
+ */
+
+@import "../variables.scss";
+
+.root {
+
+  width: 100%;
+  height: 100%;
+}
+
+.designPane {
+  position: fixed;
+  top: $main-content-top;
+  left: 0;
+  bottom: 0;
+
+  width: $design-pane-width;
+
+}
+
+.previewPane {
+  position: fixed;
+  top: $main-content-top;
+  left: $design-pane-width;
+  right: $design-pane-width;
+  bottom: 0;
+
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.logicsPane {
+  position: fixed;
+  top: $main-content-top;
+  right: 0;
+  bottom: 0;
+
+  width: $design-pane-width;
+}
