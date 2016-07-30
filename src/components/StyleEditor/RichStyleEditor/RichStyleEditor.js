@@ -24,29 +24,31 @@ class RichStyleEditor extends Component {
     let {TextField, ColorField, ButtonField} = SimpleFields;
     return (
       <div className={s.root}>
-        <div className={s.boxModel}>
+        {/*<div className={s.boxModel}>
           <div className={cx(s.container, s.margin)}>
             <span>margin</span>
-            <TextField attribute="top" className={s.top} {...baseFieldAttrs} />
-            <TextField attribute="left" className={s.left} {...baseFieldAttrs} />
-            <TextField attribute="bottom" className={s.bottom} {...baseFieldAttrs} />
-            <TextField attribute="right" className={s.right} {...baseFieldAttrs} />
+            <TextField attribute="margin-top" className={s.top} {...baseFieldAttrs} />
+            <TextField attribute="margin-left" className={s.left} {...baseFieldAttrs} />
+            <TextField attribute="margin-bottom" className={s.bottom} {...baseFieldAttrs} />
+            <TextField attribute="margin-right" className={s.right} {...baseFieldAttrs} />
             <div className={s.containerWrapper}><div className={cx(s.container, s.border)}>
               <span>border</span>
-              <TextField attribute="margin-top" className={s.top} {...baseFieldAttrs} />
-              <TextField attribute="margin-left" className={s.left} {...baseFieldAttrs} />
-              <TextField attribute="margin-bottom" className={s.bottom} {...baseFieldAttrs} />
-              <TextField attribute="margin-right" className={s.right} {...baseFieldAttrs} />
+              <TextField attribute="border-top" className={s.top} {...baseFieldAttrs} />
+              <TextField attribute="border-left" className={s.left} {...baseFieldAttrs} />
+              <TextField attribute="border-bottom" className={s.bottom} {...baseFieldAttrs} />
+              <TextField attribute="border-right" className={s.right} {...baseFieldAttrs} />
               <div className={s.containerWrapper}><div className={cx(s.container, s.padding)}>
                 <span>padding</span>
-                <TextField attribute="margin-top" className={s.top} {...baseFieldAttrs} />
-                <TextField attribute="margin-left" className={s.left} {...baseFieldAttrs} />
-                <TextField attribute="margin-bottom" className={s.bottom} {...baseFieldAttrs} />
-                <TextField attribute="margin-right" className={s.right} {...baseFieldAttrs} />
+                <TextField attribute="padding-top" className={s.top} {...baseFieldAttrs} />
+                <TextField attribute="padding-left" className={s.left} {...baseFieldAttrs} />
+                <TextField attribute="padding-bottom" className={s.bottom} {...baseFieldAttrs} />
+                <TextField attribute="padding-right" className={s.right} {...baseFieldAttrs} />
               </div></div>
             </div></div>
           </div>
-        </div>
+        </div>*/}
+        margin: <TextField attribute="margin" {...baseFieldAttrs} /><br/>
+        border: <TextField attribute="border" {...baseFieldAttrs} /><br/>
         padding: <TextField attribute="padding" {...baseFieldAttrs} /><br/>
         color: <ColorField attribute="color" {...baseFieldAttrs} /><br/>
         background: <ColorField attribute="background-color" {...baseFieldAttrs} /><br/>
